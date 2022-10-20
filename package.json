@@ -1,0 +1,12 @@
+{
+  "name": "zpsm_lab2",
+  "version": "0.0.0",
+  "description": "zpsm_lab2",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
