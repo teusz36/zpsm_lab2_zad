@@ -46,6 +46,38 @@ console.log(_.find(user.allGrades, { 'weight': 1 }));
 
 
 
+const collections = [
+    {},
+    15,
+    "hello@test.pl",
+    null,
+    ['aaa', 'bbb', 5],
+    'admin@gmail.com',
+    undefined,
+    'a34@yahoo.com',
+    '321@a',
+    '321.pl'
+];
+
+let getMails = function (collection) {
+    let mails = [];
+    collection.forEach(elem => {
+        if (typeof (elem) == 'string') {
+            if (/[a-zA-Z0-9]*@{1}[a-zA-Z]*[.]{1}[a-zA-Z]*/.test(elem)) {
+                mails.push(elem);
+            }
+        }
+    })
+    mails.sort();
+    console.log(mails);
+    
+}
+
+getMails(collections);
+
+
+
+
 
 
 
