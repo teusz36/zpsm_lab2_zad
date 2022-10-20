@@ -41,6 +41,8 @@ const licz_srednia = function () {
 
 licz_srednia();
 
+console.log(_.find(user.allGrades, { 'weight': 1 }));
+
 
 
 
